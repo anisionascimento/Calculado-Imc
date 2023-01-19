@@ -16,7 +16,7 @@ const geTxt = (imc) =>{
 
 const imCalc = () => {
     const valorimc = (+peso.value / (+altura.value *+altura.value));
-    resultado.textContent = getxt(valorimc);
+    resultado.textContent = geTxt(valorimc);
 
 }
 button.addEventListener('click',imCalc);    
