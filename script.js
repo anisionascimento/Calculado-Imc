@@ -1,10 +1,14 @@
+//marcando os ID
+
 const button = document.getElementById('button');
 const nome = document.getElementById('nome');
 const peso = document.getElementById('peso');
 const altura = document.getElementById('altura');
 const resultado = document.getElementById('resultado');
 
-const geTxt = (imc) =>{
+//declarando a mensagem que aparecerá nos texto
+
+const msg = (imc) =>{
     if (imc > 40) return 'Obesidade grau III';
     if (imc > 35) return 'Obesidade grau II';
     if (imc > 30) return 'Obesidade grau I';
@@ -13,10 +17,10 @@ const geTxt = (imc) =>{
  
 }
 
-
+// montando as vonstantes de calculos da calculadora
 const imCalc = () => {
     const valorimc = (+peso.value / (+altura.value *+altura.value));
-    resultado.textContent = geTxt(valorimc);
+    resultado.textContent = msg(valorimc);
 
 }
 button.addEventListener('click',imCalc);    
