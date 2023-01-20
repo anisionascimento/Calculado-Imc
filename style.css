@@ -2,9 +2,28 @@
     
     background-color: orange;
     width: 300px;
-    height: 150px;   
+    height: 180px;   
+    margin-left:35px;
+    padding: 5px;
+    box-shadow: 25;
+    border-radius: 10px;
 
     
+}
+.input {
+    font-size: 20px;
+}
+
+#button {
+    
+    font-size: 17px;
+    cursor: pointer;
+    background-color: #daa520;
+    border: 2px solid blanchedalmond;
+    border-radius: 5px;
+    margin-top: 6px;   
+         
+
 }
 
 
