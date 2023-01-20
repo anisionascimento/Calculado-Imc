@@ -18,9 +18,14 @@ const msg = (imc) =>{
 }
 
 // montando as vonstantes de calculos da calculadora
+
+
 const imCalc = () => {
+    if (!peso.value || !altura.value || !nome.value) return resultado.textContent ='Por Gentileza Preencha todos os Campos!';
+
     const valorimc = (+peso.value / (+altura.value *+altura.value));
-    resultado.textContent = msg(valorimc);
+
+    resultado.textContent =`${nome.value} - ${msg(valorimc)}`;
 
 }
 button.addEventListener('click',imCalc);    
