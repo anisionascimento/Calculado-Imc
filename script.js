@@ -14,6 +14,7 @@ const msg = (imc) =>{
     if (imc > 30) return 'Obesidade grau I';
     if (imc > 25) return 'Levemente acima do peso';
     if (imc > 18) return 'Peso ideal';
+     if (imc < 18) return 'Cuidado Você  esta abaixo do peso ideal';
  
 }
 
